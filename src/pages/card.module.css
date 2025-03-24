@@ -1,0 +1,316 @@
+/* Genel Stil */
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FFE0B2;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #FF6F3C !important;
+  padding: 15px 25px;
+  color: white !important;
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  align-items: center;
+  position: flex;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.navbar-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFE0B2 !important;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Sepet Başlığı */
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #D84315;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Menü (ul) */
+.menu-items {
+  list-style: none; /* Liste noktalarını kaldır */
+  padding: 0;
+  margin: 0;
+}
+
+/* Boş Sepet Mesajı */
+.empty-cart-message {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Sepet Özeti ve Sipariş Butonu */
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #D84315;
+}
+
+.order-button {
+  background-color: #FF7043;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:disabled {
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+}
+
+.order-button:hover:not(:disabled) {
+  background-color: #E64A19;
+}
+
+/* Footer */
+.footer {
+  background-color: #FF6F3C !important;
+  color: white !important;
+  text-align: center;
+  width: 100%;
+  position: relative !important;
+  padding: 15px;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  margin-top: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Ana Sayfaya Dön Butonu */
+.return-home {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-link {
+  background-color: #FF7043;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.home-link:hover {
+  background-color: #E64A19;
+}
+
+.cart-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Daha küçük ekranlar için esnek grid */
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Firma Bilgileri */
+.cart-item-company {
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  align-items: center; /* Yatayda ortala */
+  margin-bottom: 15px; /* Alt boşluk */
+}
+
+.company-photo {
+  width: 80px; /* Fotoğraf genişliği */
+  height: 80px; /* Fotoğraf yüksekliği */
+  border-radius: 50%; /* Yuvarlak fotoğraf */
+  object-fit: cover; /* Fotoğrafı sığdır */
+  margin-bottom: 10px; /* Fotoğraf ile metin arası boşluk */
+}
+
+.company-name {
+  font-size: 16px; /* Metin boyutu */
+  font-weight: bold; /* Kalın yazı */
+  color: #D84315; /* Renk */
+  text-align: center; /* Metni ortala */
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.cart-item:hover {
+  transform: scale(1.05);
+}
+
+/* Fotoğraf Konteyneri */
+.cart-item-image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.cart-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Menü Adı ve Fiyat */
+.cart-item-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #D84315;
+  margin-bottom: 10px;
+}
+
+.cart-item-price {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Butonlar ve Adet Kontrolü */
+.cart-item-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.quantity-button {
+  background-color: #FF7043;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-button:hover {
+  background-color: #E64A19;
+}
+
+.quantity-value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Sepet Öğesi Silme Butonu */
+.remove-button {
+  background-color: transparent;
+  color: #FF7043;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.remove-button:hover {
+  color: #E64A19;
+}
+
+/* Mobil Cihazlar İçin */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .cart-items {
+    grid-template-columns: 1fr; /* Mobilde tek sütun */
+    gap: 15px; /* Aralıkları küçült */
+    padding: 5px; /* Padding'i azalt */
+  }
+
+  .cart-item {
+    width: 100%; /* Tam genişlik */
+    padding: 10px; /* Padding'i azalt */
+  }
+
+  .cart-item-image-container {
+    height: 150px; /* Fotoğraf konteyner yüksekliğini azalt */
+  }
+
+  .cart-item-name {
+    font-size: 16px; /* Yazı boyutunu küçült */
+  }
+
+  .cart-item-price {
+    font-size: 14px; /* Yazı boyutunu küçült */
+  }
+
+  .quantity-button, .remove-button {
+    font-size: 14px; /* Buton yazı boyutunu küçült */
+    padding: 6px 10px; /* Buton padding'ini ayarla */
+  }
+
+  .quantity-value {
+    font-size: 16px; /* Adet değeri yazı boyutunu küçült */
+
+  }
+
+  .order-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

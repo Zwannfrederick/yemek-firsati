@@ -1,0 +1,122 @@
+/* account.css */
+.account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFE0B2;
+  flex-direction: column;
+}
+
+.account-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.account-title {
+  font-size: 24px;
+  color: #FF6F3C;
+  margin-bottom: 20px;
+}
+
+.account-info {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.account-info p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.account-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.edit-button, .save-button, .logout-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #FF6F3C;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #E65A29;
+}
+
+.save-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.hbutton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #FF6F3C;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 15%; /* Masaüstü için genişlik */
+  margin-left: auto; /* Ortalamak için */
+  margin-right: auto; /* Ortalamak için */
+  display: block; /* Butonu blok seviyesine çevir */
+}
+.hbutton:hover {
+  background-color: #E65A29;
+}
+
+@media (max-width: 768px) {
+  .hbutton {
+    width: 60%; /* Mobilde daha geniş bir buton */
+    max-width: 300px; /* Maksimum genişlik sınırı */
+    margin-left: auto; /* Ortalamak için */
+    margin-right: auto; /* Ortalamak için */
+  }
+  .account-card {
+    padding: 20px;
+    width: 80%;
+  }
+}

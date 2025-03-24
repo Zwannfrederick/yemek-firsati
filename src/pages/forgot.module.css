@@ -1,0 +1,104 @@
+/* Sayfa arka planı */
+.forgot-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #FFE0B2;
+}
+/* Şifremi Unuttum formu */
+.forgot-password-form {
+  background: linear-gradient(145deg, #FFFFFF, #F9F9F9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Başlık */
+.forgot-password-title {
+  color: #FF6F3C;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* Input alanları */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.input-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333333;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+}
+/* Input odak efekti */
+.input-field:focus {
+  border-color: #FF6F3C;
+  box-shadow: 0px 0px 8px rgba(255, 111, 60, 0.5);
+  outline: none;
+}
+/* Giriş butonu */
+.forgot-password-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #FF6F3C, #FF8F57);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+/* Buton hover efekti */
+.forgot-password-button:hover {
+  background: linear-gradient(90deg, #E65A29, #FF6F3C);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ana Sayfaya Dön Butonu */
+.main-link {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #FF6F3C, #FF8F57);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ana sayfaya dön butonu hover efekti */
+.main-link:hover {
+  background: linear-gradient(90deg, #E65A29, #FF6F3C);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .forgot-password-form {
+    padding: 20px;
+    width: 80%;
+  }
+}

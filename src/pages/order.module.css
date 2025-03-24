@@ -1,0 +1,36 @@
+/* OrderConfirmation.css */
+.order-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #FFE0B2;
+  text-align: center;
+  padding: 20px;
+}
+.order-confirmation h1 {
+  font-size: 32px;
+  color: #FF6F3C;
+  margin-bottom: 20px;
+}
+.order-confirmation p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+.home-button {
+  background-color: #FF6F3C;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+.home-button:hover {
+  background-color: #E65A29;
+}

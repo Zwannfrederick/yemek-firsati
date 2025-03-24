@@ -1,0 +1,234 @@
+/* Genel Stil */
+.company-panel-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.company-panel-container:hover {
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar Section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6F3C;
+  padding: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+
+.navbar h1 {
+  font-size: 36px;
+  color: #FFE0B2;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Siparişler Bölümü */
+.orders-section, .menu-section {
+  margin-bottom: 60px;
+}
+
+.orders-section h2, .menu-section h2 {
+  font-size: 28px;
+  color: #FF6F3C;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 3px solid #FF6F3C;
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+/* Sipariş ve Menü Öğeleri */
+.orders-list, .menu-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.order-card, .menu-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+.order-card:hover, .menu-item:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.order-card p, .menu-item p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Butonlar */
+.assign-button, .delete-button {
+  background-color: #FF6F3C;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.assign-button:hover, .delete-button:hover {
+  background-color: #E65A29;
+}
+
+/* Menü Ekleme Bölümü - Tablo Formatı */
+.add-menu-item {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.add-menu-item table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0; /* Hücreler arası boşluğu kaldır */
+  border-radius: 12px; /* Tablonun köşelerini yuvarlak yap */
+  overflow: hidden; /* Köşelerin düzgün görünmesi için */
+}
+
+.add-menu-item th, .add-menu-item td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-menu-item th {
+  background-color: #FF6F3C;
+  color: white;
+  font-weight: 600;
+}
+
+.add-menu-item input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.add-menu-item input:focus {
+  border-color: #FF6F3C;
+  box-shadow: 0 0 5px rgba(255, 111, 60, 0.3);
+}
+
+.add-menu-item button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.add-menu-item button:hover {
+  background-color: #45a049;
+}
+
+/* Ana Sayfaya Dön Butonu */
+.return-home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-link {
+  background-color: #FF6F3C;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.home-link:hover {
+  background-color: #E65A29;
+}
+
+/* Footer */
+.footer {
+  background-color: #FF6F3C !important;
+  color: white !important;
+  text-align: center;
+  width: 100%;
+  position: relative !important;
+  padding: 15px;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  margin-top: 50px; /* Footer ile üstteki içerik arasında boşluk */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .company-panel-container {
+    padding: 15px;
+  }
+
+  .panel-title {
+    font-size: 28px;
+  }
+
+  .orders-section h2, .menu-section h2 {
+    font-size: 24px;
+  }
+
+  .orders-list, .menu-list {
+    grid-template-columns: 1fr; /* Tek sütunlu düzen */
+  }
+
+  .add-menu-item {
+    padding: 15px;
+  }
+
+  .add-menu-item th, .add-menu-item td {
+    padding: 10px;
+  }
+
+  .home-link {
+    padding: 12px 24px;
+  }
+}
