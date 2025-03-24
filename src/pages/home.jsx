@@ -204,7 +204,7 @@ const Home = () => {
       <footer className={styles['footer']}>
         <p>
           İletişim: info@example.com |  
-          <Link to="/company" className={styles['footer-link']}> Şirket Paneli</Link>
+          <Link to="/company" className={styles['footer-link']}> Şirket Paneli Demo İçin Konuldu</Link>
         </p>
       </footer>
     </div>
