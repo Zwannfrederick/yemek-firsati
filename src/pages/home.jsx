@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaUser, FaShoppingCart } from 'react-icons/fa'; // React Icons'dan ikonlar
 import styles from './home.module.css'; // CSS Modules import ediliyor
+import { Link } from "react-router-dom"; 
 
 const Home = () => {
   const [focusedItem, setFocusedItem] = useState(null);
@@ -200,9 +201,11 @@ const Home = () => {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className={styles['footer']}>
-        <p>İletişim: info@example.com</p>
+        <p>
+          İletişim: info@example.com |  
+          <Link to="/company" className={styles['footer-link']}> Şirket Paneli</Link>
+        </p>
       </footer>
     </div>
   );
